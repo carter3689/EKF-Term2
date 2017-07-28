@@ -105,6 +105,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       /**
       Initialize state.
       */
+      previous_timestamp_ = measurement_pack.timestamp_;
 
       ekf_.x_(0) = measurement_pack.raw_measurements_(0);
       ekf_.x_(0) = measurement_pack.raw_measurements_(1);
