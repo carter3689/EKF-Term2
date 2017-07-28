@@ -55,8 +55,6 @@ FusionEKF::FusionEKF() {
              0, 0, 1000, 0,
              0, 0, 0, 1000;
 
-  noise_ax = 5;
-  noise_ay = 5;
 
 }
 
